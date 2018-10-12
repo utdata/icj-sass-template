@@ -38,19 +38,19 @@ ul {
   margin-left: 50px;
 }
 
+.main {
+  width: 85%;
+  min-height: 750px;
+  min-width: 600px;
+  background-color: #FFCFCF;
+}
+
 .main ul {
   padding-left: 30px;
 }
 
 .main li {
   font-size: 0.85rem;
-}
-
-.main {
-  width: 85%;
-  min-height: 750px;
-  min-width: 600px;
-  background-color: #FFCFCF;
 }
 
 .main h1 {
