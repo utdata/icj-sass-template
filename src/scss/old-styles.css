@@ -38,44 +38,44 @@ ul {
   margin-left: 50px;
 }
 
-.main {
+.content {
   width: 85%;
   min-height: 750px;
   min-width: 600px;
   background-color: #FFCFCF;
 }
 
-.main ul {
+.content ul {
   padding-left: 30px;
 }
 
-.main li {
+.content li {
   font-size: 0.85rem;
 }
 
-.main h1 {
+.content h1 {
   font-size: 62px;
   -webkit-margin-before: 0;
   padding-top: 40px;
   padding-left: 30px;
 }
 
-.main video {
+.content video {
   padding-left: 30px;
 }
 
-.main p {
+.content p {
   padding-left: 30px;
   width: 55%;
   min-width: 550px;
 }
 
-.main a {
+.content a {
   color: inherit;
   padding-left: 30px;
   text-decoration: none;
 }
 
-.main a:hover {
+.content a:hover {
   text-decoration: underline;
 }
