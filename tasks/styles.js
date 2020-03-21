@@ -1,10 +1,11 @@
+const postcss = require('gulp-postcss');
 const gulp = require('gulp');
 const newer = require('gulp-newer');
 const sourcemaps = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
-const cssnano = require('gulp-cssnano');
-const gutil = require('gulp-util');
+const cssnano = require('cssnano');
+const log = require('fancy-log');
 const browserSync = require('browser-sync').create();
 
 module.exports = () => {
@@ -20,6 +21,10 @@ module.exports = () => {
     'bb >= 10'
   ];
 
+  var plugins = [
+  cssnano()
+  ];
+
   return gulp.src([
     'src/scss/*.scss',
     'src/scss/*.css'
@@ -27,9 +32,9 @@ module.exports = () => {
     .pipe(newer('./docs/css'))
     .pipe(sourcemaps.init())
     .pipe(sass())
-    .on('error', gutil.log)
+    .on('error', log.error)
     .pipe(autoprefixer(AUTOPREFIXER_BROWSERS))
-    .pipe(cssnano())
+    .pipe(postcss(plugins))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./docs/css'))
     .pipe(browserSync.stream());
