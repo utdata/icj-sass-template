@@ -15,7 +15,7 @@ module.exports = () => {
   }),
   gulp.watch(['src/html/**/*.html'], gulp.series('html', browserSyncReload));
   gulp.watch(
-    ['node_modules/bootstrap/scss/bootstrap.scss','src/scss/**/*.scss'],
+    ['node_modules/bootstrap/scss/bootstrap.scss','src/scss/**/*.*css'],
     gulp.series('styles', browserSyncReload)
     );
 };

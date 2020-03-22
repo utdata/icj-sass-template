@@ -4,7 +4,7 @@ html, body {
   color: #ffffff;
 }
 
-p, a {
+p, ul {
   font-size: 0.75rem;
 }
 
@@ -49,10 +49,6 @@ ul {
   padding-left: 30px;
 }
 
-.content li {
-  font-size: 0.85rem;
-}
-
 .content h1 {
   font-size: 62px;
   -webkit-margin-before: 0;
@@ -72,7 +68,6 @@ ul {
 
 .content a {
   color: inherit;
-  padding-left: 30px;
   text-decoration: none;
 }
 
