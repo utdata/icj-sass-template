@@ -2,6 +2,8 @@
 
 A template to use in learning Sass. See the [ICJ class](https://github.com/utdata/icj-class#sass) for more info.
 
+> Has been updated for Spring 2021.
+
 ## Project setup with degit
 
 An easy way to use download and use a template from a repo is [degit](https://www.npmjs.com/package/degit), which ICJ students should have installed when they set up Node.
