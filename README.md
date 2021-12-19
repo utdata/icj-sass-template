@@ -2,7 +2,7 @@
 
 A template to use in learning Sass. See the [ICJ class](https://github.com/utdata/icj-class#sass) for more info.
 
-> Has been updated for Spring 2021.
+> Has been updated for Spring 2022.
 
 ## Project setup with degit
 
