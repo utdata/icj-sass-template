@@ -1,5 +1,5 @@
-const gulp = require('gulp');
-const browserSync = require('browser-sync');
+import browserSync from 'browser-sync';
+import gulp from 'gulp';
 
 // BrowserSync Reload
 function browserSyncReload(done) {
@@ -7,7 +7,8 @@ function browserSyncReload(done) {
   done();
 }
 
-module.exports = () => {
+function serve() {
+  // eslint-disable-next-line no-unused-expressions
   browserSync({
     notify: false,
     server: 'docs',
@@ -18,4 +19,8 @@ module.exports = () => {
     ['node_modules/bootstrap/scss/bootstrap.scss','src/scss/**/*.*css'],
     gulp.series('styles', browserSyncReload)
     );
-};
+}
+
+gulp.task('serve', serve);
+
+export default serve;
