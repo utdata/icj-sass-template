@@ -1,4 +1,5 @@
 import clean from './tasks/clean.js';
+import clear from './tasks/clear.js';
 import gulp from 'gulp';
 import html from './tasks/html.js';
 import images from './tasks/images.js';
@@ -21,3 +22,4 @@ gulp.task('dev', gulp.series('default', serve));
 
 // Allow them to be called individually
 gulp.task(clean);
+gulp.task(clear);
