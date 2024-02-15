@@ -30,10 +30,6 @@ h4 {
   margin: 14px 0 8px 0;
 }
 
-ul {
-  list-style: none;
-}
-
 .container {
   min-height: 100%;
   display: flex;
